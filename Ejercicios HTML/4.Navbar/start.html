@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Navbar</title>
+    <style>
+        /*Debido a que npo podemos utilizar css he decidido darle aqui algunos estilos ya que no deja darlos en su propia etiqueta*/
+        ::placeholder {
+            color:  #868c94; 
+            font-size: 23px; 
+            font-family: Arial, sans-serif;
+        }
+        select{
+            background-color: transparent;
+            border: transparent;
+            color:  #686b6e;
+            font-size: 23px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+        li{
+            font-size: 23px;
+        }
+        input{
+            width: 200px;
+            height: 24px;
+            text-align: left;
+            
+        }
+      </style>
+  </head>
+  <body>
+    <nav style="background-color:  #24242c; color: #fff; padding: 10px;">
+        <aside>
+        <ul style="list-style-type: none; padding: 0; display: flex; justify-content: center;">
+            <li style="margin-right: 20px; font-family: Arial, sans-serif;"><a href="https://keepcoding.io/blog/como-hacer-un-menu-de-navegacion-en-html/" target="_blank">Navbar</a></li>
+            <li style="margin-right: 20px; color: white; font-family: Arial, sans-serif;"><a href="#">Home</a></li>
+            <li style="margin-right: 20px; color:  #686b6e; font-family: Arial, sans-serif;"><a href="https://es.wikipedia.org/wiki/Link">Link</a></li>
+            <li style="margin-right: 20px;" ><select>
+                <option >Dropdown</option>
+                <option>Opcion 2</option>
+                <option>Opcion 3</option>
+            </select></li>
+            <li style="margin-right: 20px; "><button disabled style="font-size: 23px; background-color: transparent; border: transparent; color: #4a4d50 ">Disabled</button></li>
+            <li style="margin-left: 50px; margin-right: 5px; "><input placeholder="Search"/></li>
+            <li style="margin-right: 20px;"><button style="background-color: transparent; border: 1px solid #0da321c5; color: #0da321c5; border-radius: 10%; font-size: 23px;">Search</button> </li>
+        </ul>
+    </aside>
+    </nav>
+  </body>
+</html>
