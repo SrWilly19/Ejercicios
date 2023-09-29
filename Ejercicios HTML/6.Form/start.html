@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required/>
+      <label for="password">Password:</label>
+      <input type="password" id="pwd" name="pwd"/>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required/>
+      <label for="lname">Last name:</label>
+      <input typer="text" id="lname" name="lname"/>
+      <label for="bdate">Date of Birth:</label>
+      <input type="date" id="bdate" name="bdate"/>
+      <label for="phone">Telephone number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="666-458-776" maxlength="11" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/>
+      <label for="plan">Select a plan:</label>
+      <select id="plan" name="plan">
+        <option value="free">Plan free</option>
+        <option value="plan1">Plan 1 - 15€</option>
+        <option value="plan2">Plan 2 - 25€</option>
+        <option value="plan3">Plan 3 - 35€</option>
+      </select>
+      <label for="proPlan">Pro Plan:</label>
+      <input type="checkbox" id="proPlan" name="proPlan" value="pro">
+      <label for="ccardnum">Credit card number:</label>
+      <input type="text" id="ccardnum" name="ccardnum" placeholder="1234 5678 9012 3456" maxlength="19" required/>
+      <label for="cvc">CVC:</label>
+      <!--Utilizao type password para que no se vea el cvc que ponemos por seguridad-->
+      <input type="password" id="cvc" name="cvc" placeholder="123" maxlength="4" required/>
+      <label for="expiration">Expiration date:</label>
+      <input type="text" id="expiration" name="expiration" placeholder="MM/YY" maxlength="5" required/>
+      <label for="street">Street:</label>
+      <input type="text" id="street" name="street" required/>
+      <label for="number">Number:</label>
+      <input type="text" id="number" name="number" required/>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required/>
+      <label for="postalCode">Postal Code:</label>
+      <input type="text" id="postalCode" name="postalCode" required/><br>
+      <input type="submit" value="Send"/>
+    </form>
+  </body>
+</html>
