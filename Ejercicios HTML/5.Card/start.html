@@ -6,19 +6,40 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <style>
+        a{
+            padding-left: 10px;
+        }
+        h2{
+            padding-left: 10px;
+        }
+        p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
     <title>Card</title>
   </head>
   <body>
-    <img src="imagen" alt="Image cap"/>
-    <div><h2>Card</h2>
-        <pre>Text</pre>
-    </div>
-    <p>An item</p>
-    <p>A second item</p>
-    <p>A third item</p>
-    <div>
+    <div style="border: 1px solid #555555; width: 230px; height: 500px;">
+        <div>
+            <img src="card-image.png" alt="Imagen de la tarjeta" width="230px"/>
+        </div>
+        <div style="text-align: justify; border: 1px solid #555555; border-top: transparent; border-left: transparent; border-right: transparent;">
+            <h2>Card title</h2>
+            <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div style="text-align: left; border: 1px solid #555555; border-top: transparent; border-left: transparent; border-right: transparent;">
+        <p>An item</p>
+        </div>
+        <div style="text-align: left; border: 1px solid #555555; border-top: transparent; border-left: transparent; border-right: transparent; ">
+        <p>A second item</p>
+        </div>
+        <div style="text-align: left; border: 1px  solid #555555; border-top: transparent; border-left: transparent; border-right: transparent;">
+        <p>A third item</p>
+        </div><br>
         <a href="link">Card title</a>
-        <a href="link2">Another title</a>
+        <a href="link2">Another title</a>   
     </div>
   </body>
 </html>
