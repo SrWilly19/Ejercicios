@@ -45,8 +45,9 @@
       </div>
       <div>
         <label for="form-cc">Credit card number</label>
+        <input id="form-cc" name="cc" type="number" minlength="16" maxlength="16" required/>
         <!--Le damos 19 de maxima porque contamos con los espacios-->
-        <input id="form-cc" name="cc" type="text" placeholder="1234 5678 9012 3456" maxlength="19" required/>
+        <!--<input id="form-cc" name="cc" type="text" placeholder="1234 5678 9012 3456" maxlength="19" required/>-->
         <label for="form-cvc">CVC</label>
         <input id="form-cvc" name="cvc" type="text" placeholder="123" maxlength="3" required/>
         <label for="form-exp">Expiration date</label>

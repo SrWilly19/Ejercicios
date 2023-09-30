@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Blog Page</title>
+    <style>
+      article{
+        background-image: url(assets/laptop.png);
+        background-size: cover;
+        padding: 20px;
+        color: white;
+      }
+      footer{
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      div{
+        background-image: url(assets/hands.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+      p{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      }
+      h1{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+      }
+      table{
+        color:white;
+        text-shadow: 2px 2px 4px #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>¿Qué es la repostería molecular?</h1>
+      <p>En sintonía con la comida molecular, podemos hablar de la repostería molecular. Y tal y como nos podemos imaginar, también se trata de aplicar la ciencia a los diferentes postres
+        para elaborar recetas con impresionantes presentaciones.
+        Pero no nos engañemos, muchas veces dicen que las apariencias engañan y en la repostería molecular, de hecho, es muy frecuente. Es decir, puede que el comensal vea un postre que
+        tiene una forma y un color que le hace pensar que aquel plato será una cosa, y en el momento de probarlo, se da cuenta de que no sabe a lo que él creía. Por lo que, la repostería 
+        molecular influye en la mente de su consumidor.
+        Gracias a estos avances científicos, los grandes chefs pueden crear sorprendentes preparaciones dulces e incluso elaborar recetas que antes eran imposibles o muy difíciles de 
+        realizar. </p>
+    </article>
+    <div>
+      <form>
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" id="name" name="name" required/></td>
+              <td><label for="lname">Last name:</label></td>
+              <td><input typer="text" id="lname" name="lname"/></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" required/></td>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" id="pwd" name="pwd"/></td>
+            </tr>
+            <tr>
+              <td><label for="bdate">Date of Birth:</label></td>
+              <td><input type="date" id="bdate" name="bdate"/></td>
+              <td><label for="phone">Telephone number:</label></td>
+              <td><input type="tel" id="phone" name="phone" placeholder="666-458-776" maxlength="11" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required/></td>
+            </tr>
+            <tr>
+              <td><label for="street">Street:</label></td>
+              <td><input type="text" id="street" name="street" required/></td>
+              <td><label for="number">Number:</label></td>
+              <td><input type="text" id="number" name="number" required/></td>
+            </tr>
+            <tr>
+              <td><label for="city">City:</label></td>
+              <td><input type="text" id="city" name="city" required/></td>
+              <td><label for="postalCode">Postal Code:</label></td>
+              <td><input type="text" id="postalCode" name="postalCode" required/></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td><input type="submit" value="Send"/></td>
+            </tr>
+        </tbody>
+        </table>
+      </form>
+    </div>
+    <footer>
+      2023 Cocina molecular - Todos los derechos reservados a Willy.
+    </footer>
+  </body>
+</html>
