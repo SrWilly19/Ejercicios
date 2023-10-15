@@ -1,0 +1,29 @@
+#yellow{
+    order: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#red{
+    order: 2;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#green{
+    order: 3;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+#orange{
+    order: 4;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#blue{
+    order: 5;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
