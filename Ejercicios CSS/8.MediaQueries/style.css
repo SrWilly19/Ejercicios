@@ -1,0 +1,97 @@
+@media screen and (max-width: 768px) {
+    .catPosts{
+        display: grid;
+        grid-template-columns: auto auto;
+    }    
+}
+
+@media screen and (max-width: 375px) {
+    .catPosts{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.catPosts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCat{
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+    max-width: 250px;
+    background: linear-gradient(to bottom, rgb(117, 116, 116), rgb(240, 236, 236));
+    border-radius: 5%;
+    margin: 10px;
+}
+
+.cHeader{
+    display:flex;
+    flex-direction: row;
+    max-width: inherit;
+}
+
+.circlePic{
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.hText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.cName{
+    display: block;
+    color: black;
+    font-size: 18px;
+}
+
+.cDate{
+    display: block;
+    color: white;
+    font-size: 13px;
+}
+
+.imgMR{
+    height: 100%;
+    width: 100%;
+    max-width: inherit;
+    object-fit: cover;
+}
+
+span{
+    font-weight: bold;
+}
+
+.cIcons{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.iHeart img{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.iComent img{
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+}
+
+.paragraph{
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
