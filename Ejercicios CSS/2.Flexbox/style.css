@@ -1,3 +1,9 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .sidebar{
     width: 200px;
     height: 100%;
@@ -12,5 +18,29 @@
 }
 
 .navLinks a{
-    
+    text-decoration: none;
+    color: #2b2b2b;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.navLinks a:hover{
+    color: #2b2bb2;
+}
+
+.userInfo{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userInfo img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.userInfo p{
+    margin-top: 10px;
+    color: white;
 }
