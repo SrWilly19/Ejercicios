@@ -1,0 +1,29 @@
+#green{
+    grid-area: gagreen;
+}
+#yellow{
+    grid-area: gayellow;
+}
+#red{
+    grid-area: gared;
+}
+#orange{
+    grid-area: gaorange;
+}
+#blue{
+    grid-area: gablue;
+}
+
+.OGrid{
+    display: grid;
+    grid-template-areas: 
+    "gagreen gagreen gagreen"
+    "gayellow gared gablue"
+    "gayellow gared gablue"
+    "gaorange gaorange gablue";
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
