@@ -1,0 +1,52 @@
+a{
+    padding-left: 10px;
+}
+h2{
+    padding-left: 10px;
+}
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card{
+    border: 1px solid #555555; 
+    width: 230px; 
+    height: 500px;
+}
+
+img{
+    width: 230px;
+}
+
+.title{
+    text-align: justify; 
+    border: 1px solid #555555; 
+    border-top: transparent; 
+    border-left: transparent; 
+    border-right: transparent;
+}
+
+.frstItem{
+    text-align: left; 
+    border: 1px solid #555555; 
+    border-top: transparent; 
+    border-left: transparent; 
+    border-right: transparent;
+}
+
+.scndItem{
+    text-align: left; 
+    border: 1px solid #555555; 
+    border-top: transparent; 
+    border-left: transparent; 
+    border-right: transparent;
+}
+
+.thrdItem{
+    text-align: left; 
+    border: 1px  solid #555555; 
+    border-top: transparent; 
+    border-left: transparent; 
+    border-right: transparent;
+}
