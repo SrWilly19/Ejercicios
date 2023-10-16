@@ -1,16 +1,20 @@
-@media screen and (max-width: 768px) {
-    .catPosts{
-        display: grid;
-        grid-template-columns: auto auto;
-    }    
-}
-
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
     .catPosts{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .catPosts{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: auto auto;
+    }
+}
+
+
 .catPosts{
     display: flex;
     flex-direction: row;
