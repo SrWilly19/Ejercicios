@@ -4,8 +4,11 @@ function printName(){
     function inner(){
         return helloName;
     }
+
+    setTimeout(function(){
+        console.log(helloName);
+    }, 1000);
+
     return inner;
 }
-
-var miCierre =  printName();
-console.log(miCierre());
+var miCierre = printName();
