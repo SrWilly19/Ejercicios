@@ -18,7 +18,18 @@ class Circle {
 }
 
 class AreaCalculator {
-  // ...
+  static calculate(figure){
+    if (figure instanceof Square){
+      return figure.side ** 2;
+    } else if(figure instanceof Rectangle){
+      return figure.width * figure.height;
+    }else if (figure instanceof Circle){
+      //Utilizamos 2 "**" para hacer la elevacion al cuadrado
+      return Math.PI * figure.radius ** 2;
+    } else{
+      throw new Error("Invalid Figure");
+    }
+  }
 }
 
 const square = new Square(4);
