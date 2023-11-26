@@ -20,5 +20,14 @@
 </html>
 
 <script>
-  // code here
+  //De esta manera cogemos el primer form-input que encuentra y muestra su valor
+  //var formInput = document.querySelector('.form-input').value;
+
+  var formInputs = document.querySelectorAll('.form-input');
+
+  //Nos devolvera una node list la cual debemos iterar y obtener los valores.
+  formInputs.forEach(function(input){
+    console.log(input.value);
+  });
+  
 </script>
