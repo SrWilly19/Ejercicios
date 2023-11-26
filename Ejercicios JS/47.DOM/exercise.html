@@ -20,5 +20,18 @@
 </html>
 
 <script>
-  // code here
+  //Obtenemos todos los campos input
+  var inputs = document.querySelectorAll('input');
+
+  //Iteramos sobre los campos de entrada y conseguimos el texto de la etiqueta anterior
+  inputs.forEach(function(input){
+    //Utilizamos previousElementSibiling para acceder al elemento hermano anterior
+    var label = input.previousElementSibling;
+
+    //Obtenemos el texto de la etiqueta y el valor del campo de entrada
+    var labelText = label.textContent.trim();
+    var inputValue = input.value;
+
+    console.log(labelText + ' ' + inputValue);
+  })
 </script>
