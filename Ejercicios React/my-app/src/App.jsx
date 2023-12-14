@@ -12,7 +12,7 @@ export function App(){
         <div>
             <HelloWorld />
             <Message />
-            <Welcome name="John" age={24}/>    
+            <Welcome name="John" age={17}/>    
         </div>
     )
 }
