@@ -1,3 +1,4 @@
+import { AlertClock } from "./AlertClock";
 import { HelloWorld } from "./HelloWorld";
 import { Message } from "./Message";
 import { Welcome } from "./Welcome";
@@ -8,11 +9,18 @@ Write your answers in a comment*/
 /*What happens if no name prop is passed to the Welcome component? Si no tenemos nada puesto para esos caso solo sladra elmensaje de "Welcome, " sin nignun nombre
  Can you set a default value for the name prop? Si se puede, en mi caso he puesto el nombre guest por si no entrara ningun nombre*/
 export function App(){
+
+    function handleShowTime(){
+        const now = new Date()
+        alert(`The current time is ${now.toLocaleTimeString()}`)
+    }
+
     return(
         <div>
             <HelloWorld />
             <Message />
-            <Welcome name="John" age={17}/>    
+            <Welcome name="John" age={17}/>
+            <AlertClock onClick={handleShowTime}/>    
         </div>
     )
 }
