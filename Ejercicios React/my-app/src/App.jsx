@@ -3,6 +3,7 @@ import { Clock } from "./Clock";
 import { Counter } from "./Counter";
 import { HelloWorld } from "./HelloWorld";
 import { Message } from "./Message";
+import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome";
 
 /*Can you use the Hello component more than once in the App component? Si What happens if you do? Si lo copio si volvera a representar mi componente en la pagina
@@ -24,6 +25,7 @@ export function App(){
             <Welcome name="John" age={17}/>
             <AlertClock onClick={handleShowTime}/>
             <Counter />
+            <MouseClicker />
             <Clock />    
         </div>
     )
