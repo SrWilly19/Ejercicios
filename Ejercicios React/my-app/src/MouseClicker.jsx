@@ -5,6 +5,12 @@ export function MouseClicker(){
         /*How can you prevent the name attribute of the button from being printed to the console when the image is clicked?
         Yo he utilizado un condicional que mire si el tag es una img y dependiendo de ello que imprima el src de la imagen o el nombre del boton
         */
+
+        /*
+        Solucion propuesta por el ejercicio, pero no nos enseña el name del boton
+        console.log(event.target.src);
+        event.stopPropagation();
+        */
         
         if(event.target.tagName === 'IMG'){
             const imageSource = event.currentTarget.querySelector('img').src;
@@ -12,6 +18,7 @@ export function MouseClicker(){
         } else{
             console.log(event.currentTarget.name)
         }
+
         /*Obtener el boton que tienne el manejador de eventos
         const buttonElement = event.currentTarget;
         //console.log(event.currentTarget.name)
