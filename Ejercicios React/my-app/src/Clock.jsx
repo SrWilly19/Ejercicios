@@ -13,5 +13,5 @@ export function Clock(){
         }
     }, [])
 
-    return <h2>Current tiem: {date.toLocaleTimeString()}</h2>
+    return <h2>Current time: {date.toLocaleTimeString()}</h2>
 }

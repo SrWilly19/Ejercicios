@@ -7,7 +7,7 @@ export function MouseClicker(){
         */
 
         /*
-        Solucion propuesta por el ejercicio, pero no nos enseña el name del boton
+        Solucion propuesta por el ejercicio, pero nos enseña el name del boton como un undefined componente
         console.log(event.target.src);
         event.stopPropagation();
         */
