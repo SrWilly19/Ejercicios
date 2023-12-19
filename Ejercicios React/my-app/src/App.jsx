@@ -3,6 +3,7 @@ import { Clock } from "./Clock";
 import { Counter } from "./Counter";
 import { HelloWorld } from "./HelloWorld";
 import { InteractiveWelcome } from "./InteractiveWelcome";
+import { Login } from "./Login";
 import { Message } from "./Message";
 import { MouseClicker } from "./MouseClicker";
 import { Welcome } from "./Welcome";
@@ -28,7 +29,8 @@ export function App(){
             <Counter />
             <MouseClicker />
             <Clock />
-            <InteractiveWelcome />    
+            <InteractiveWelcome />
+            <Login />    
         </div>
     )
 }
