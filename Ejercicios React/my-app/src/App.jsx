@@ -20,6 +20,10 @@ export function App(){
         alert(`The current time is ${now.toLocaleTimeString()}`)
     }
 
+    const handleLogin = (userData) => {
+        console.log("Datos de inicio de sesion: ", userData)
+    }
+    
     return(
         <div>
             <HelloWorld />
@@ -30,7 +34,7 @@ export function App(){
             <MouseClicker />
             <Clock />
             <InteractiveWelcome />
-            <Login />    
+            <Login onLogin={handleLogin} />    
         </div>
     )
 }
