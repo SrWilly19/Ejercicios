@@ -31,6 +31,7 @@ export function Login({onLogin}){
     }
 
     function handleSubmit(event){
+        //How do you prevent the default behavior of the form element?
         //Previene el comportamiento predeterminado del formulario (seria recargar la pagina)
         event.preventDefault()
 
