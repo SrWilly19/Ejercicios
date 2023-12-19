@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { CounterDisplay } from "./CounterDisplay"
 
 /*When calling "setter" function to increment the counter, should the parameter be a function or an immediate value? Function Why? 
@@ -6,11 +6,23 @@ La funcion de actualizacion nos garantiza la consistencia y precision del estado
 */
 export function Counter({initialValue = 0}){
     const [counter, setCounter] = useState(initialValue)
-
+    const directionRef = useRef(null)
+    const prevCounterRef = useRef(null)
 
     useEffect(() => {
         console.log(`The value of the counter is ${counter}`)
-    })
+        if(counter > prevCounterRef.current){
+            directionRef.current = "up"
+        } else if(counter < prevCounterRef.current){
+            directionRef.current = "down"
+        }
+
+        prevCounterRef.current = counter;
+
+        if(directionRef.current !== null){
+            console.log(`Direction of change: ${directionRef.current}`)
+        }
+    }, [counter])
 
     function handleCounterIncrement(){
         setCounter((c) => c + 1)
