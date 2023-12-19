@@ -6,6 +6,7 @@ import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Login } from "./Login";
 import { Message } from "./Message";
 import { MouseClicker } from "./MouseClicker";
+import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
 
 /*Can you use the Hello component more than once in the App component? Si What happens if you do? Si lo copio si volvera a representar mi componente en la pagina
@@ -23,7 +24,7 @@ export function App(){
     const handleLogin = (userData) => {
         console.log("Datos de inicio de sesion: ", userData)
     }
-    
+
     return(
         <div>
             <HelloWorld />
@@ -34,7 +35,8 @@ export function App(){
             <MouseClicker />
             <Clock />
             <InteractiveWelcome />
-            <Login onLogin={handleLogin} />    
+            <Login onLogin={handleLogin} /> 
+            <UncontrolledLogin />  
         </div>
     )
 }
