@@ -25,8 +25,8 @@ export function InteractiveWelcome(){
     
     return (
         <div>
-            <input name="user" value={data.name} onChange={handleInputChange}/>
-            <Welcome name={}/>
+            <input name="user" placeholder="Enter your name" value={data.user} onChange={handleInputChange}/>
+            <Welcome name={data.user}/>
         </div>
     )
 }
