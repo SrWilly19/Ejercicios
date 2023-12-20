@@ -1,5 +1,6 @@
 import { AlertClock } from "./AlertClock";
 import { Clock } from "./Clock";
+import { Colors } from "./Colors";
 import { Counter } from "./Counter";
 import { FocusableInput } from "./FocusableInput";
 import { HelloWorld } from "./HelloWorld";
@@ -25,7 +26,7 @@ export function App(){
     const handleLogin = (userData) => {
         console.log("Datos de inicio de sesion: ", userData)
     }
-
+    
     return(
         <div>
             <HelloWorld />
@@ -39,6 +40,11 @@ export function App(){
             <Login onLogin={handleLogin} /> 
             <UncontrolledLogin /> 
             <FocusableInput /> 
+            <Colors colors={[
+                {id: 1, name: "Red"},
+                {id: 2, name: "Green"},
+                {id: 3, name: "Blue"},
+            ]} />
         </div>
     )
 }
