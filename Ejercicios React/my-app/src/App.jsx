@@ -8,6 +8,7 @@ import { InteractiveWelcome } from "./InteractiveWelcome";
 import { Login } from "./Login";
 import { Message } from "./Message";
 import { MouseClicker } from "./MouseClicker";
+import { TodoList } from "./TodoList";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
 
@@ -45,6 +46,7 @@ export function App(){
                 {id: 2, name: "Green"},
                 {id: 3, name: "Blue"},
             ]} />
+            <TodoList />
         </div>
     )
 }
