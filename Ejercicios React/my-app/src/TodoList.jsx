@@ -15,6 +15,10 @@ export function TodoList(){
         }
     }
 
+    function handleTodoReset(){
+        setTodos([]);
+    }
+
     return (
         <div>
             <ul>
@@ -24,7 +28,8 @@ export function TodoList(){
             </ul>
 
             <input type="text" placeholder="Nueva tarea" ref={inputRef}/>
-            <button onClick={handleAddTodo}>Agregar</button> 
+            <button onClick={handleAddTodo}>Agregar</button>
+            <button onClick={handleTodoReset}>Reset</button>
         </div>
         
     )
