@@ -1,30 +1,30 @@
-import { useState } from "react"
+
+import { useState, useRef } from "react"
 
 export function TodoList(){
-    const [todo, setTodos] = useState([]);
+    const [todos, setTodos] = useState([]);
+    const inputRef = useRef(null)
+
 
     const handleAddTodo = () =>{
-        const newTodo = document.querySelector('input').value;
+        const newTodo = inputRef.current.value;
 
-        if(newTodo.trim() !== ''){
-            setTodos([...todo, newTodo]);
-            document.querySelector('input').value = '';
+        if(newTodo.trim() !== ""){
+            setTodos([...todos, newTodo]);
+            inputRef.current.value = "";
         }
     }
 
     return (
         <div>
             <ul>
-                {todo.map((todo, index) => (
+                {todos.map((todo, index) => (
                     <li key={index}>{todo}</li>    
                 ))}
             </ul>
 
-            <input type="text" placeholder="Nueva tarea" />
+            <input type="text" placeholder="Nueva tarea" ref={inputRef}/>
             <button onClick={handleAddTodo}>Agregar</button> 
-            <pre>
-                {JSON.stringify(todo, null, 2)}
-            </pre>
         </div>
         
     )
