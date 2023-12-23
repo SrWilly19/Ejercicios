@@ -23,7 +23,9 @@ export function TodoList(){
         <div>
             <ul>
                 {todos.map((todo, index) => (
-                    <li key={index}>{todo}</li>    
+                    <li key={index}>
+                        {todo}
+                        </li>    
                 ))}
             </ul>
 
