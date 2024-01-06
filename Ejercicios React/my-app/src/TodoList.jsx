@@ -15,6 +15,10 @@ export function TodoList(){
         }
     }
 
+    const handleRemoveTodo = (indexToRemove) => {
+        const updatedTodos = todos.filter((_, index) => index !== indexToRemove);
+        setTodos(updatedTodos)
+    }
     function handleTodoReset(){
         setTodos([]);
     }
@@ -25,7 +29,8 @@ export function TodoList(){
                 {todos.map((todo, index) => (
                     <li key={index}>
                         {todo}
-                        </li>    
+                        <button onClick={() => handleRemoveTodo(index)}>Remove</button>
+                    </li>    
                 ))}
             </ul>
 
