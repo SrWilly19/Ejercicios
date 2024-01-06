@@ -1,7 +1,8 @@
 import { Age } from './Age'
 
+
 export function Welcome({name = 'Guest', age}) {
-    return <div>
+    return <div className='welcome'>
             <p>Welcome, <strong>{name}</strong>!</p>
             <Age age={age} />
             {age > 18 &&  <Age age={age}/>}
