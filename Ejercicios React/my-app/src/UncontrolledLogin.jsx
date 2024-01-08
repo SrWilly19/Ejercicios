@@ -1,3 +1,5 @@
+import './global.css'
+
 export function UncontrolledLogin(){
     function handleFormSubmit(event){
         event.preventDefault()
@@ -18,12 +20,12 @@ export function UncontrolledLogin(){
     What are the disadvantages? Se limita a formularios HTML, su utilidad se enfoca en el manejo de datos de formularios web. No es la mejor opcion si se necesita enviar datos estructurados 
     de manera mas compleja. No maneja automaticamente datos mas complejos, Es posible que necesites realizar conversiones manuales si tus datos son mas complejos que simples formularios*/
     return (
-        <form onSubmit={handleFormSubmit}>
-            <h1>My uncontrolled Form</h1>
-            <input name="username"/>
-            <input name="password" type="password"/>
+        <form onSubmit={handleFormSubmit} >
+            <h1 className="text-3xl font-bold underline">My uncontrolled Form</h1>
+            <input name="username" type="text" placeholder="Name"/>
+            <input name="password" type="password" placeholder="Password"/>
             <input name="session" type="checkbox"/>
-            <button>Login</button>
+            <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Login</button>
             <button type="reset">Reset</button>
 
         </form>

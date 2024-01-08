@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react"
+import {Form, InputGroup, FormControl, Button} from 'react-bootstrap';
 
 export function FocusableInput(){
     const mountedRef = useRef(false)
@@ -16,7 +17,16 @@ export function FocusableInput(){
     
     return (
         <div>
-            <input ref={inputRef} name="username"></input>
+            <Form>
+                <InputGroup className="mb-3">
+                    <FormControl placeholder="Username"
+                        aria-label="Username"
+                        aria-describedby="basic-addon2" 
+                    />
+                    
+                </InputGroup>
+            </Form>
+            <input ref={inputRef} name="username" placeholder="Username"></input>
         </div>
     )
 }

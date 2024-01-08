@@ -1,5 +1,5 @@
-
 import { useState, useRef } from "react"
+import classes from "./TodoList.module.scss"
 
 export function TodoList(){
     const [todos, setTodos] = useState([]);
@@ -29,14 +29,14 @@ export function TodoList(){
                 {todos.map((todo, index) => (
                     <li key={index}>
                         {todo}
-                        <button onClick={() => handleRemoveTodo(index)}>Remove</button>
+                        <button className={classes.buttonRemove} onClick={() => handleRemoveTodo(index)}>Remove</button>
                     </li>    
                 ))}
             </ul>
 
             <input type="text" placeholder="Nueva tarea" ref={inputRef}/>
-            <button onClick={handleAddTodo}>Agregar</button>
-            <button onClick={handleTodoReset}>Reset</button>
+            <button  className={classes.button} onClick={handleAddTodo}>Agregar</button>
+            <button className={classes.button} onClick={handleTodoReset}>Reset</button>
         </div>
         
     )
