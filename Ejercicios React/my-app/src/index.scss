@@ -1,0 +1,21 @@
+.welcome{
+    background-color: aqua;
+    border: 1px solid #1e1ee7;
+    padding: 10px;
+}
+
+.app-content-hidden{
+    display: none;
+}
+
+.app-content{
+    transition: opacity 0.3 ease;
+}
+
+.app{
+    background-color: white;
+    border: solid 2px red;
+}
+.app-title{
+    cursor: pointer;
+}

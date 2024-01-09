@@ -1,6 +1,7 @@
 import { AlertClock } from "./AlertClock";
 import { Clock } from "./Clock";
 import { Colors } from "./Colors";
+import { Container } from "./Container";
 import { Counter } from "./Counter";
 import { FocusableInput } from "./FocusableInput";
 import { HelloWorld } from "./HelloWorld";
@@ -11,7 +12,7 @@ import { MouseClicker } from "./MouseClicker";
 import { TodoList } from "./TodoList";
 import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
-import './global.css'
+//import './global.css'
 
 /*Can you use the Hello component more than once in the App component? Si What happens if you do? Si lo copio si volvera a representar mi componente en la pagina
 Can you render the Message component directly within the App component? Si What happens if you do? Se representa el mensaje que tenemos dentro de nuestro componente Message
@@ -30,7 +31,7 @@ export function App(){
     }
     
     return(
-        <div>
+        <Container title={<h1>My awesome aplication</h1>}>
             <HelloWorld />
             <Message />
             <Welcome name="John" age={17}/>
@@ -48,6 +49,6 @@ export function App(){
                 {id: 3, name: "Blue"},
             ]} />
             <TodoList />
-        </div>
+        </Container>
     )
 }
