@@ -14,6 +14,7 @@ import { UncontrolledLogin } from "./UncontrolledLogin";
 import { Welcome } from "./Welcome";
 import {  useState } from "react"
 import { LanguageContext } from "./LanguageContext";
+import { Form } from "./Form";
 
 //import './global.css'
 
@@ -66,6 +67,7 @@ export function App(){
                         {id: 3, name: "Blue"},
                     ]} />
                     <TodoList />
+                    <Form />
                 </LanguageContext.Provider> 
             </Container>
         </div>
