@@ -16,6 +16,7 @@ import {  useState } from "react"
 import { LanguageContext } from "./LanguageContext";
 import { Form } from "./Form";
 import { GithubUser } from "./GithubUser";
+import GithubUsers from "./GithubUsers";
 
 //import './global.css'
 
@@ -69,6 +70,7 @@ export function App(){
                         {id: 3, name: "Blue"},
                     ]} />
                     <TodoList />
+                    <GithubUsers />
                     <Form />
                 </LanguageContext.Provider> 
             </Container>
