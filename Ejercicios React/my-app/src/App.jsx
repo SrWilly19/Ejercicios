@@ -15,6 +15,7 @@ import { Welcome } from "./Welcome";
 import {  useState } from "react"
 import { LanguageContext } from "./LanguageContext";
 import { Form } from "./Form";
+import { GithubUser } from "./GithubUser";
 
 //import './global.css'
 
@@ -57,6 +58,7 @@ export function App(){
                     <Counter />
                     <MouseClicker />
                     <Clock />
+                    <GithubUser username="cantoscdenise" />
                     <InteractiveWelcome />
                     <Login onLogin={handleLogin} /> 
                     <UncontrolledLogin /> 
