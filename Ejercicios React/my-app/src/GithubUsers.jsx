@@ -3,7 +3,7 @@ import { GithubUser } from "./GithubUser";
 
 const GithubUsers = () =>{
     const [username, setUsername] = useState('');
-    const [userList, setUserList] = useState('');
+    const [userList, setUserList] = useState([]);
 
     const handleInputChange = (e) => {
         setUsername(e.target.value)
