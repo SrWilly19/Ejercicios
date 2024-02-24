@@ -17,6 +17,7 @@ import { LanguageContext } from "./LanguageContext";
 import { Form } from "./Form";
 import { GithubUser } from "./GithubUser";
 import GithubUsers from "./GithubUsers";
+import { HookCounter } from "./HookCounter";
 
 //import './global.css'
 
@@ -72,6 +73,7 @@ export function App(){
                     <TodoList />
                     <GithubUsers />
                     <Form />
+                    <HookCounter />
                 </LanguageContext.Provider> 
             </Container>
         </div>
