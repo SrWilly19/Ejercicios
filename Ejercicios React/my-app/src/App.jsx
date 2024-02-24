@@ -18,6 +18,7 @@ import { Form } from "./Form";
 import { GithubUser } from "./GithubUser";
 import GithubUsers from "./GithubUsers";
 import { HookCounter } from "./HookCounter";
+import { LoginForm } from "./LoginForm";
 
 //import './global.css'
 
@@ -74,6 +75,7 @@ export function App(){
                     <GithubUsers />
                     <Form />
                     <HookCounter />
+                    <LoginForm />
                 </LanguageContext.Provider> 
             </Container>
         </div>
